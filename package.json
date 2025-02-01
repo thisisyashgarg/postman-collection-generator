@@ -1,0 +1,22 @@
+{
+	"name": "postman-collection-generator",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"scripts": {
+		"build": "npx tsc",
+		"start": "tsc && node --env-file .env dist/index.js ",
+		"dev": "nodemon --exec 'npm run start' --ext ts",
+		"pretty": "prettier --write ."
+	},
+	"dependencies": {
+		"typescript": "^5.7.3"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.9",
+		"prettier": "^3.4.2"
+	},
+	"keywords": [],
+	"author": "Yash Garg",
+	"license": "ISC",
+	"description": "Generate Postman Collection from Typescript Node.js API"
+}
